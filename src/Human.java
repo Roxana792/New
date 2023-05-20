@@ -11,9 +11,9 @@ public  abstract class Human  implements Movement{
    int Oxygen=100;
 
 
-    public void moveUp(Human h1) {
-        if(h1.x != 0) {
-            h1.x--;
+    public void moveUp() {
+        if(x != 0) {
+            x--;
         } else throw new IllegalArgumentException("Movement cannot be posible");
     }
 
